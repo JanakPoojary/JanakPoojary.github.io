@@ -1,4 +1,5 @@
 <html><head>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -60,12 +61,12 @@ body, html {
 
 }
 .bgimg-1 {
-  background-image: url("book2-min.jpg");
+  background-image: url("colour.jpg");
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("colour.jpg");
+  background-image: url("ban.jpg");
   min-height: 400px;
 }
 
@@ -89,6 +90,13 @@ body, html {
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
+  transition: .5s;
+}
+
+.caption span.border:hover
+{
+  font-size: 35px;
+opacity: 0.7;
 }
 
 h3 {
@@ -96,6 +104,19 @@ h3 {
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
   color: #111;
+}
+.imga {
+  position: absolute; top: 500px; right: 100px; border-radius: 50%; transition: 1s;
+  animation-name: photo;
+  animation-duration: 2s;
+  transition: 0.5s;
+}
+.imga:hover{
+  transform: scale(1.2);
+}
+@keyframes photo{
+  from{ transform: scale(2);}
+  to{transform: scale(1);}
 }
 
 /* Turn off parallax scrolling for tablets and phones */
@@ -111,10 +132,12 @@ h3 {
 <div class="bgimg-1">
   <div class="caption">
     <span class="border">JANAKARAJ POOAJRY</span>
-    <img src="janak3.jpg" width="200" height="200" style="position: absolute; top: 200px; right: 100px; border-radius: 50%;" >
+
 
   </div>
+
 </div>
+<img class="imga" src="janak3.jpg" width="200" height="200">
 
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
   <h3 style="text-align:center;">ABOUT</h3>
@@ -156,10 +179,12 @@ I created this website as a fun project but as this project stated forming up it
 
 <div class="bgimg-1">
   <div class="caption">
-    <span class="border">COOL!</span>
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">COOL!</span>
   </div>
 </div>
 
-
+<div style="color: #777;background-color:white;text-align:center;padding:30px 80px;text-align: justify;">
+  <p style="text-align:center;">Copyright © Janak Poojary </p>
+</div>
 
 </body></html>
