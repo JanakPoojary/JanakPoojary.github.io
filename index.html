@@ -1,5 +1,40 @@
 <html><head>
+<title> Janak Poojary | Bio </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 
+#navbar {
+  z-index: 1;
+  overflow: auto;
+  background-color: white;
+}
+
+#navbar a {
+
+  float: right;
+  display: block;
+  color: #777;
+  text-align: center;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 35px;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -128,17 +163,22 @@ h3 {
 </style>
 </head>
 <body>
-
+  <div id="navbar">
+  <a href="#connect">Contact</a>
+  <a href="#project">Project</a>
+  <a href="#home">Home</a>
+</div>
+<section id="home">
 <div class="bgimg-1">
   <div class="caption">
-    <span class="border">JANAKARAJ POOAJRY</span>
+    <span class="border">JANAKARAJ POOJARY</span>
 
 
   </div>
 
 </div>
 <img class="imga" src="janak3.jpg" width="200" height="200">
-
+</section>
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
   <h3 style="text-align:center;">ABOUT</h3>
   <p>HELLO THERE! I am an engineering student from Sardar Vallabhbhai
@@ -147,12 +187,13 @@ I'm a tech enthusiast and a big fan of IOT. I enjoy working with Arduino, NodeMC
 
 I created this website as a fun project but as this project stated forming up it sparked my interest in web.</p>
 </div>
-
+<section id="project">
 <div class="bgimg-2">
   <div class="caption">
     <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">PROJECTS</span>
   </div>
 </div>
+</section>
 
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
@@ -162,10 +203,10 @@ I created this website as a fun project but as this project stated forming up it
 
 <div class="bgimg-3">
   <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">GALLERY</span>
   </div>
 </div>
-
+<section id="connect">
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
     <p> CONTACT</p>
@@ -176,7 +217,7 @@ I created this website as a fun project but as this project stated forming up it
     <a href="#" class="fa fa-instagram"></a>
   </div>
 </div>
-
+</section>
 <div class="bgimg-1">
   <div class="caption">
     <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">COOL!</span>
@@ -186,5 +227,18 @@ I created this website as a fun project but as this project stated forming up it
 <div style="color: #777;background-color:white;text-align:center;padding:30px 80px;text-align: justify;">
   <p style="text-align:center;">Copyright © Janak Poojary </p>
 </div>
+<script>
+window.onscroll = function() {myFunction()};
 
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 </body></html>
