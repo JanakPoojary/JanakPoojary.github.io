@@ -1,5 +1,87 @@
 <html><head>
 <title> Janak Poojary | Bio </title>
+<style>
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ededed;
+}
+
+.loader {
+  max-width: 15rem;
+  width: 100%;
+  height: auto;
+  stroke-linecap: round;
+}
+
+circle {
+  fill: none;
+  stroke-width: 3.5;
+  -webkit-animation-name: preloader;
+          animation-name: preloader;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-transform-origin: 170px 170px;
+          transform-origin: 170px 170px;
+  will-change: transform;
+}
+circle:nth-of-type(1) {
+  stroke-dasharray: 450px;
+}
+circle:nth-of-type(2) {
+  stroke-dasharray: 400px;
+}
+circle:nth-of-type(3) {
+  stroke-dasharray: 350px;
+}
+circle:nth-of-type(4) {
+  stroke-dasharray: 200px;
+}
+circle:nth-of-type(1) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+circle:nth-of-type(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+circle:nth-of-type(3) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+circle:nth-of-type(4) {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+
+@-webkit-keyframes preloader {
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader {
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+#overlay{
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,.8);
+  position: fixed;
+  left:0;
+  top:0;
+}
+</style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
@@ -164,6 +246,17 @@ h3 {
 </style>
 </head>
 <body>
+  <div id="overlay">
+  <div class="container">
+
+	<svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+		 <circle cx="170" cy="170" r="120" stroke="#E2007C"/>
+		 <circle cx="170" cy="170" r="95" stroke="#404041"/>
+		 <circle cx="170" cy="170" r="70" stroke="#E2007C"/>
+		 <circle cx="170" cy="170" r="45" stroke="#404041"/>
+	</svg>
+</div>
+</div>
   <div id="navbar">
   <a href="#connect">Contact</a>
   <a href="#project">Project</a>
@@ -241,5 +334,12 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+</script>
+<script>
+var overlay = document.getElementById("overlay");
+window.addEventListener('load',function()
+{
+  overlay.style.display = 'none';
+})
 </script>
 </body></html>
