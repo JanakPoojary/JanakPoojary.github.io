@@ -246,6 +246,11 @@ h3 {
 .imga:hover{
   transform: scale(1.2);
 }
+@media (max-width:629px) {
+  img#optionalstuff {
+    display: none;
+  }
+}
 @keyframes photo{
   from{ transform: scale(2);}
   to{transform: scale(1);}
@@ -285,7 +290,7 @@ h3 {
   </div>
 
 </div>
-<img class="imga" src="janak3.jpg" width="200" height="auto">
+<img id="optionalstuff" class="imga" src="janak3.jpg" width="200" height="auto">
 </section>
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
   <h3 style="text-align:center;">ABOUT</h3>
