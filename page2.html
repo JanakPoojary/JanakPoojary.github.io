@@ -1,90 +1,28 @@
 <html>
 <head>
-<style >.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: #ededed;
-}
-
-.loader {
-  max-width: 15rem;
-  width: 100%;
-  height: auto;
-  stroke-linecap: round;
-}
-
-circle {
-  fill: none;
-  stroke-width: 3.5;
-  -webkit-animation-name: preloader;
-          animation-name: preloader;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-transform-origin: 170px 170px;
-          transform-origin: 170px 170px;
-  will-change: transform;
-}
-circle:nth-of-type(1) {
-  stroke-dasharray: 450px;
-}
-circle:nth-of-type(2) {
-  stroke-dasharray: 400px;
-}
-circle:nth-of-type(3) {
-  stroke-dasharray: 350px;
-}
-circle:nth-of-type(4) {
-  stroke-dasharray: 200px;
-}
-circle:nth-of-type(1) {
-  -webkit-animation-delay: -0.15s;
-          animation-delay: -0.15s;
-}
-circle:nth-of-type(2) {
-  -webkit-animation-delay: -0.3s;
-          animation-delay: -0.3s;
-}
-circle:nth-of-type(3) {
-  -webkit-animation-delay: -0.45s;
-          animation-delay: -0.45s;
-}
-circle:nth-of-type(4) {
-  -webkit-animation-delay: -0.6s;
-          animation-delay: -0.6s;
-}
-
-@-webkit-keyframes preloader {
-  50% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes preloader {
-  50% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-</style>
-
+  <meta charset="utf-8"/>
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <title>Firebase example</title>
 </head>
 <body>
-  <div class="container">
-
-	<svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
-		 <circle cx="170" cy="170" r="140" stroke="#E2007C"/>
-		 <circle cx="170" cy="170" r="100" stroke="#404041"/>
-		 <circle cx="170" cy="170" r="70" stroke="#E2007C"/>
-		 <circle cx="170" cy="170" r="25" stroke="#404041"/>
-	</svg>
-
-</div>
+  <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDxVOe3CgKhDSTTU80bpgYOau_f7E4521Q",
+      authDomain: "farmers-guide-f752c.firebaseapp.com",
+      databaseURL: "https://farmers-guide-f752c.firebaseio.com",
+      projectId: "farmers-guide-f752c",
+      storageBucket: "farmers-guide-f752c.appspot.com",
+      messagingSenderId: "819588637821"
+    };
+    firebase.initializeApp(config);
+    var ref = firebase.database().ref();                           ref.on("value", function(snapshot){
+    output.innerHTML = JSON.stringify(snapshot.val(), null, 2);
+});
+  </script>
+  <h1>Firebase example</h1>
+   <pre id='data'></pre>
+   <script src="script.js"></script>
 </body>
 </html>
