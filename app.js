@@ -10,9 +10,25 @@ const config = {
 };
 firebase.initializeApp(config);
 //Get element
-const preObject= document.getElementById('object');
+const prelight= document.getElementById('light');
 //Create refences
-const dbRefObject= firebase.database().ref().child('object');
-// sync object cahnges
-dbRefObject.on('value', snap => console.log(snap.val()));
+const dbReflight= firebase.database().ref().child('light');
+// sync logs cahnges
+dbReflight.on('value', snap => {
+prelight.innerText=JSON.stringify(snap.val(),null,3);
+});
+const pretemp= document.getElementById('temp');
+//Create refences
+const dbReftemp= firebase.database().ref().child('temperature');
+// sync logs cahnges
+dbReftemp.on('value', snap => {
+pretemp.innerText=JSON.stringify(snap.val(),null,3)+" c";
+});
+const prehum= document.getElementById('hum');
+//Create refences
+const dbRefhum= firebase.database().ref().child('moisture');
+// sync logs cahnges
+dbRefhum.on('value', snap => {
+prehum.innerText=JSON.stringify(snap.val(),null,3);
+});
 }());
