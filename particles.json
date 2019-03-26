@@ -18,11 +18,11 @@
       "random":true
     },
     "size":{
-      "value":2
+      "value":3
     },
     "line_linked":{
       "enable":true,
-      "distance":20
+      "distance":10
     }
   }
 }
