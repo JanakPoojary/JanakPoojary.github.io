@@ -4,7 +4,7 @@
       "value":110
     },
     "color":{
-      "value":"#f9f3f4"
+      "value":"#ffffff"
     },
     "shape":{
       "type":"circle",
@@ -22,7 +22,7 @@
     },
     "line_linked":{
       "enable":true,
-      "distance":110
+      "distance":210
     }
   }
 }
