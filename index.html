@@ -14,7 +14,6 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" type="text/css" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -41,63 +40,6 @@
   stroke-linecap: round;
 }
 
-circle {
-  fill: none;
-  stroke-width: 3.5;
-  -webkit-animation-name: preloader;
-          animation-name: preloader;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-transform-origin: 170px 170px;
-          transform-origin: 170px 170px;
-  will-change: transform;
-}
-circle:nth-of-type(1) {
-  stroke-dasharray: 450px;
-}
-circle:nth-of-type(2) {
-  stroke-dasharray: 400px;
-}
-circle:nth-of-type(3) {
-  stroke-dasharray: 350px;
-}
-circle:nth-of-type(4) {
-  stroke-dasharray: 200px;
-}
-circle:nth-of-type(1) {
-  -webkit-animation-delay: -0.15s;
-          animation-delay: -0.15s;
-}
-circle:nth-of-type(2) {
-  -webkit-animation-delay: -0.3s;
-          animation-delay: -0.3s;
-}
-circle:nth-of-type(3) {
-  -webkit-animation-delay: -0.45s;
-          animation-delay: -0.45s;
-}
-circle:nth-of-type(4) {
-  -webkit-animation-delay: -0.6s;
-          animation-delay: -0.6s;
-}
-
-@-webkit-keyframes preloader {
-  50% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes preloader {
-  50% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
 #overlay{
   height: 100%;
   width: 100%;
@@ -228,6 +170,8 @@ body, html {
 .bgimg-3 {
   background-image: url("resource/bg7.jpg");
   min-height: 400px;
+  opacity:0.8;
+  max-width: 100%;
 }
 
 .caption {
@@ -295,20 +239,10 @@ h3 {
 </style>
 </head>
 <body>
-<div id="overlay">
-  <div class="container">
-
-	<svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
-		 <circle cx="170" cy="170" r="120" stroke="#E2007C"/>
-		 <circle cx="170" cy="170" r="95" stroke="#404041"/>
-		 <circle cx="170" cy="170" r="70" stroke="#E2007C"/>
-		 <circle cx="170" cy="170" r="45" stroke="#404041"/>
-	</svg>
-</div>
-</div>
   <div id="navbar">
   <a href="#connect">Connect</a>
   <a href="#project">Project</a>
+  <a href="resume.html">Resume</a>
   <a href="#home">Home</a>
 </div>
 <section id="home">
@@ -396,10 +330,6 @@ I created this website as a fun project but as this project started forming up i
 </div>
 
 <div class="bgimg-3">
-  <div>
-
-    <center><h1 style="letter-spacing:30px;font-size:150px;color: #000000;opacity:0.8;">INSPIRATION</h1></center>
-</div>
 </div>
 <section id="connect">
 <div style="position:relative;">
