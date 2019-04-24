@@ -7,7 +7,7 @@
     border-radius: 10px;
     padding: 30px;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     margin-top: 30px;
     padding-bottom: 50px;
   }
@@ -15,7 +15,7 @@
   .image-box{
     box-sizing: border-box;
     border: 15px solid rgba(0,0,0,0.05);
-    max-width: 500px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
