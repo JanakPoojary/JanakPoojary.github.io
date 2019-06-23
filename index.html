@@ -1,391 +1,458 @@
-<html><head>
+<html>
+
+<head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130397238-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130397238-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-130397238-1');
-</script>
-
-<title> Janak Poojary | Bio </title>
-<link rel="shortcut icon" type="image/png" href="resource/icon1.png">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" type="text/css" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Kanit|Montserrat" rel="stylesheet">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-
-<style>
-.mySlides {display:none;}
-</style>
-
-<style>
-* {
-    box-sizing: border-box;
-}
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: #ededed;
-}
-
-.loader {
-  max-width: 20rem;
-  width: 100%;
-  height: auto;
-  stroke-linecap: round;
-}
-
-#overlay{
-  height: 100%;
-  width: 100%;
-  background: rgba(0,0,0,.8);
-  position: fixed;
-  left:0;
-  top:0;
-  z-index: 9999;
-}
-</style>
-
-<style>
-
-#navbar {
-  z-index: 1;
-  overflow: auto;
-  background-color: white;
-}
-
-#navbar a {
-
-  float: right;
-  display: block;
-  color: #777;
-  text-align: center;
-  padding: 15px 25px;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding-top: 25px;
-  opacity: 0.6;
-}
-.sticky + .content {
-  padding-top: 60px;
-}
-</style>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 100px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-.fa-github {
-  background: black;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-instagram {
-  background: #cc0052;
-  color: white;
-}
-
-</style>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
-}
-.w3-button{
-  margin:20px;
-  padding:10px;
-}
-.bgimg-1, .bgimg-3 {
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-.bgimg-1 {
-  background-image: url("resource/bg3.png");
-  min-height: 60%;
-  opacity:0.9;
-}
-
-.bgimg-2 {
-  background-image: url("resource/bg3.jpg");
-  min-height: 450px;
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bgimg-3 {
-  background-image: url("resource/bg7.jpg");
-  min-height: 400px;
-  opacity:0.8;
-  max-width: 100%;
-}
-
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 30px;
-  letter-spacing: 10px;
-  transition: .5s;
-
-}
-
-.caption span.border:hover
-{
-  font-size: 35px;
-opacity: 0.7;
-}
-
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
-
-@media screen and (min-width: 0px) and (max-width: 400px) {
-    #order{
-        display:none;
+    function gtag() {
+      dataLayer.push(arguments);
     }
-}
+    gtag('js', new Date());
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    gtag('config', 'UA-130397238-1');
+  </script>
+
+  <title> Janak Poojary | Bio </title>
+  <link rel="shortcut icon" type="image/png" href="resource/icon1.png">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kanit|Montserrat" rel="stylesheet">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+  <style>
+    .mySlides {
+      display: none;
+    }
+  </style>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #ededed;
+    }
+
+    .loader {
+      max-width: 20rem;
+      width: 100%;
+      height: auto;
+      stroke-linecap: round;
+    }
+
+    #overlay {
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, .8);
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 9999;
+    }
+  </style>
+
+  <style>
+    #navbar {
+      z-index: 1;
+      overflow: auto;
+      background-color: white;
+    }
+
+    #navbar a {
+
+      float: right;
+      display: block;
+      color: #777;
+      text-align: center;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    #navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding-top: 25px;
+      opacity: 0.6;
+    }
+
+    .sticky+.content {
+      padding-top: 60px;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 100px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .fa-google {
+      background: #dd4b39;
+      color: white;
+    }
+
+    .fa-github {
+      background: black;
+      color: white;
+    }
+
+    .fa-linkedin {
+      background: #007bb5;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #cc0052;
+      color: white;
+    }
+  </style>
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font: 400 15px/1.8 "Lato", sans-serif;
+      color: #777;
+    }
+
+    .w3-button {
+      margin: 20px;
+      padding: 10px;
+    }
+
+    .bgimg-1,
+    .bgimg-3 {
+      position: relative;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    .bgimg-1 {
+      background-image: url("resource/bg3.png");
+      min-height: 60%;
+      opacity: 0.9;
+    }
+
+    .bgimg-2 {
+      background-image: url("resource/bg3.jpg");
+      min-height: 450px;
+      position: relative;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bgimg-3 {
+      background-image: url("resource/bg7.jpg");
+      min-height: 400px;
+      opacity: 0.8;
+      max-width: 100%;
+    }
+
+    .caption {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      color: #000;
+    }
+
+    .caption span.border {
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      font-size: 30px;
+      letter-spacing: 10px;
+      transition: .5s;
+
+    }
+
+    .caption span.border:hover {
+      font-size: 35px;
+      opacity: 0.7;
+    }
+
+    h3 {
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      font: 20px "Lato", sans-serif;
+      color: #111;
+    }
+
+    @media screen and (min-width: 0px) and (max-width: 400px) {
+      #order {
+        display: none;
+      }
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3 {
         background-attachment: scroll;
-    }
-}
+      }
 
-</style>
+      #ioth {
+        font-size: 1.5rem;
+      }
+
+      #webdevh {
+        font-size: 1.5rem;
+      }
+
+      #iotdesc {
+        display: none;
+      }
+
+      #webdevdesc {
+        display: none;
+      }
+
+      #jp {
+        height: auto;
+        width: auto;
+      }
+
+      #linkeddesc {
+        display: none;
+      }
+
+      #tweet {
+        height: auto;
+        width: auto;
+      }
+
+      #roverdesc {
+        display: none;
+      }
+
+      #rover {
+        display: none;
+      }
+
+      #linkedadesc {
+        height: auto;
+        width: auto;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <div id="navbar">
-  <a href="#connect">Connect</a>
-  <a href="page1.html">Contact</a>
-  <a href="#project">Project</a>
-  <a href="resume.html">Resume</a>
-  <a href="#home">Home</a>
-</div>
-<section id="home">
-<div class="bgimg-1">
-   <div id="particles-js">
-  <div class="caption">
-    <span class="border"><a href="page1.html" title="contact" target="_blank" style="text-decoration:none; color:white;">JANAKARAJ POOJARY</a></span>
-</div>
+    <a href="#connect">Connect</a>
+    <a href="page1.html">Contact</a>
+    <a href="#project">Project</a>
+    <a href="resume.html">Resume</a>
+    <a href="#home">Home</a>
   </div>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script>
-particlesJS.load('particles-js', 'particles.json',
-function(){
-  console.log('particles.json loaded...')
-})
-</script>
-</div>
-</section>
-<div style="color: #777;background-color:white;text-align:center;margin-top:40px;text-align: justify;">
-  <h2 style="text-align:center;letter-spacing:8;">ABOUT</h2>
-  <div class="container" style="background-color:white;">
-    <table>
-      <tr><td>
-    <h2 style="font-family: 'Gugi', cursive;color:grey;">
-  _<span
-    class="typer"
-    id="some-id"
-    data-words=" C O D E R , M A K E R , D E V E L O P E R, E N G I N E E R "
-    data-colors="#ed426d,#6d67c6,#b74033,#20C1BD"
-    data-delay="20">
-  </span>
-  </h2>
-  <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-</td></tr>
-<tr><td></br>
-  <p style="font-size:15px;font-family:'Montserrat', sans-serif;">HELLO THERE! I am a student from Sardar Vallabhbhai
-Institute of Technology, Vasad, Gujarat, India. </br>I'm pursuing my Bachelors in Computer Engineering.</br>
-I'm a tech enthusiast and a big fan of IOT.</br> I enjoy working with Arduino, NodeMCU, firebase and related stuff!
-</br>I created this website as a fun project but as this project started forming up it sparked my interest in web.</p>
-</td></tr>
-</table>
-<img src="resource/jk.jpg" style="border-radius:50%;width:250px; height:250px;margin-left:100px;"></img>
-</div>
-</div>
-<section id="project">
-  <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-    <h3 style="text-align:center;">PROJECTS</h3>
-          <div class="eblock">
-             <div class="row">
-               <div class="col-sm-5">
-                  <div class="image-box">
-                    <div class="image">
-                      <img src="resource/ard.gif" alt="">
-                    </div>
-                  </div>
-               </div>
-               <div class="col-sm-7">
-                  <div class="details">
-                      <h4 style="color:#ff5a4d">IOT and Electronics Projects</h4>
-                          Working with hardware is something that I not only love but also have great interest in. My journey in this feild started right at the age of 13 when I first created a motor propelled boat.
-                          <br>
-                          From there on I kept exploring this field. Starting from simple<strong><span style="color:white"> IC 555 to Arduinos.</span></strong> I have good experience working with <strong><span style="color:white">Arduinos and NodeMCUs.</span></strong> Currently I am working on various porjects based on <strong><span style="color:white">IOT</span></strong> using various platforms like <strong><span style="color:white">Firebase, Adafruit IO and Arduino cloud.</span></strong>
-                          <br>
-                          <br>
-                          <strong><a href="arduino.html" style="text-decoration:none; color:#ff5a4d;" target="-_blank">View Projects here</a></strong>
-                    </div>
-               </div>
-             </div>
-           </br></br>
-             <div class="row">
-               <div class="col-sm-5">
-                  <div class="image-box">
-                    <div class="image">
-                      <img src="resource/web2.gif" alt="">
-                    </div>
-                  </div>
-               </div>
-               <div class="col-sm-7">
-                  <div class="details">
-                      <h4 style="color:#ff5a4d">WEB DEVELOPMENT</h4>
-                          Web development means creating or developing websites for personal or professional uses.
-                          <br>
-                          I started with web development for fun but eventually it sparked my interest. I started with <strong><span style="color:white">HTML, CSS and JavaScript.</span></strong> I also have experience working with frameworks like <strong><span style="color:white">React, Gatsby, Vue</span></strong> etc.
-                          <br>
-                          <br>
-                          <strong><a href="web.html" style="text-decoration:none; color:#ff5a4d;" target="-_blank">View Projects here</a></strong>
-                    </div>
-               </div>
-             </div>
-           </div>
-         </div>
-</section>
+  <section id="home">
+    <div class="bgimg-1">
+      <div id="particles-js">
+        <div class="caption">
+          <span class="border"><a href="page1.html" title="contact" target="_blank" style="text-decoration:none; color:white;">JANAKARAJ POOJARY</a></span>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script>
+        particlesJS.load('particles-js', 'particles.json',
+          function() {
+            console.log('particles.json loaded...')
+          })
+      </script>
+    </div>
+  </section>
+  <div style="color: #777;background-color:white;text-align:center;margin-top:2rem;text-align: justify;">
+    <h2 style="text-align:center;letter-spacing:8;">ABOUT</h2>
+    <div class="container" style="background-color:white;">
+      <div class="row">
+        <div class="col">
+          <h2 style="font-family: 'Gugi', cursive;color:grey;">
+            _<span class="typer" id="some-id" data-words=" C O D E R , M A K E R , D E V E L O P E R, E N G I N E E R " data-colors="#ed426d,#6d67c6,#b74033,#20C1BD" data-delay="20">
+            </span>
+          </h2>
+          <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+          <p style="font-size:1rem;font-family:'Montserrat', sans-serif;"></br>HELLO THERE! I am a student from Sardar Vallabhbhai
+            Institute of Technology, Vasad, Gujarat, India. </br>I'm pursuing my Bachelors in Computer Engineering.</br>
+            I'm a tech enthusiast and a big fan of IOT.</br> I enjoy working with Arduino, NodeMCU, firebase and related stuff!
+            </br>I created this website as a fun project but as this project started forming up it sparked my interest in web.</p>
+        </div>
+        <div class="col">
+          <img src="resource/jk.jpg" id="jp" style="border-radius:50%;width:17rem; height:17rem;margin-left:5rem;"></img>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="project">
+    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+      <h3 style="text-align:center;">PROJECTS</h3>
+      <div class="eblock">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="image-box">
+              <div class="image">
+                <img src="resource/ard.gif" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="details">
+              <h4 id="ioth" style="color:#ff5a4d">IOT and Electronics Projects</h4>
+              <p id="iotdesc">Working with hardware is something that I not only love but also have great interest in. My journey in this feild started right at the age of 13 when I first created a motor propelled boat.
+                <br>
+                From there on I kept exploring this field. Starting from simple<strong><span style="color:white"> IC 555 to Arduinos.</span></strong> I have good experience working with <strong><span style="color:white">Arduinos and
+                    NodeMCUs.</span></strong> Currently I am working on various porjects based on <strong><span style="color:white">IOT</span></strong> using various platforms like <strong><span style="color:white">Firebase, Adafruit IO and Arduino
+                    cloud.</span></strong>
+                <br>
+                <br></p>
+              <strong><a href="arduino.html" style="text-decoration:none; color:#ff5a4d;" target="-_blank">View Projects here</a></strong>
+            </div>
+          </div>
+        </div>
+        </br></br>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="image-box">
+              <div class="image">
+                <img src="resource/web2.gif" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="details">
+              <h4 id="webdevh" style="color:#ff5a4d">WEB DEVELOPMENT</h4>
+              <p id="webdevdesc">Web development means creating or developing websites for personal or professional uses.
+                <br>
+                I started with web development for fun but eventually it sparked my interest. I started with <strong><span style="color:white">HTML, CSS and JavaScript.</span></strong> I also have experience working with frameworks like <strong><span
+                    style="color:white">React, Gatsby, Vue</span></strong> etc.
+                <br>
+                <br></p>
+              <strong><a href="web.html" style="text-decoration:none; color:#ff5a4d;" target="-_blank">View Projects here</a></strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p align="center"> </br>"If you get up in the morning and think the future is going to be better,</br> it is a bright day. Otherwise, it's not."</br> - ELON MUSK</p>
+  <div style="position:relative;">
+    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+      <p align="center"> </br>"If you get up in the morning and think the future is going to be better,</br> it is a bright day. Otherwise, it's not."</br> - ELON MUSK</p>
+    </div>
   </div>
-</div>
 
 
   <div style="margin:20px;">
     <h3 style="text-align:center;">SOCIAL</h3>
-    <div class="container" >
-      <div style="margin:20px;">
-        <div style="background-color:white;margin-bottom:20px;">
-        <blockquote class="embedly-card" data-card-controls="0" ><h4><a href="https://www.linkedin.com/in/janakaraj-poojary-5685b4168/">Janakaraj Poojary - Project Trainee - Larsen And Toubro, Electrical &amp; Automation Products | LinkedIn</a></h4><p>View Janakaraj Poojary's profile on LinkedIn, the world's largest professional community. Janakaraj has 5 jobs listed on their profile. See the complete profile on LinkedIn and discover Janakaraj's connections and jobs at similar companies.</p></blockquote>
-        <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div id="linkeddesc" style="background-color:white;">
+            <blockquote class="embedly-card" data-card-controls="0">
+              <h4><a href="https://www.linkedin.com/in/janakaraj-poojary-5685b4168/">Janakaraj Poojary - Project Trainee - Larsen And Toubro, Electrical &amp; Automation Products | LinkedIn</a></h4>
+              <p>View Janakaraj Poojary's profile on LinkedIn, the world's largest professional community. Janakaraj has 5 jobs listed on their profile. See the complete profile on LinkedIn and discover Janakaraj's connections and jobs at similar
+                companies.</p>
+            </blockquote>
+            <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+          </div>
+          <div style="background-color:white;">
+            <center>
+              <p id="roverdesc">ON BOARD MARS 2020 ROVER</p>
+            </center>
+            <iframe width="680" height="310" id="rover" style="margin-right:20px;" src="https://mars.nasa.gov/layout/embed/send-your-name/mars2020/certificate/?cn=19249611912" frameborder="0"></iframe>
+          </div>
+        </div>
       </div>
-      <div style="background-color:white;margin-top:20px;">
-  <center><p>ON BOARD MARS 2020 ROVER</p></center>
-<iframe width="680" height="310" style="margin-right:20px;" src="https://mars.nasa.gov/layout/embed/send-your-name/mars2020/certificate/?cn=19249611912" frameborder="0"></iframe>
-</div>
-</div>
-  <div>
-<a class="twitter-timeline" data-width="250" data-height="630" href="https://twitter.com/janak_poojari?ref_src=twsrc%5Etfw">Tweets by janak_poojari</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <div class="col">
+        <a class="twitter-timeline" id="tweet" data-width="250" data-height="630" href="https://twitter.com/janak_poojari?ref_src=twsrc%5Etfw">Tweets by janak_poojari</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
     </div>
-</div>
-</div>
-<section id="connect">
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p> CONNECT</p>
-    <a href="https://github.com/JanakPoojary" class="fa fa-github"></a>
-    <a href="https://www.facebook.com/janak.poojari" class="fa fa-facebook"></a>
-    <a href="https://www.linkedin.com/in/janakaraj-poojary-5685b4168" class="fa fa-linkedin"></a>
-    <a href="https://twitter.com/janak_poojari?s=09" class="fa fa-twitter"></a>
-    <a href="https://www.instagram.com/janakpoojari" class="fa fa-instagram"></a>
   </div>
-</div>
-</section>
+  <section id="connect">
+    <div style="position:relative;">
+      <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <p> CONNECT</p>
+        <a href="https://github.com/JanakPoojary" class="fa fa-github"></a>
+        <a href="https://www.facebook.com/janak.poojari" class="fa fa-facebook"></a>
+        <a href="https://www.linkedin.com/in/janakaraj-poojary-5685b4168" class="fa fa-linkedin"></a>
+        <a href="https://twitter.com/janak_poojari?s=09" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/janakpoojari" class="fa fa-instagram"></a>
+      </div>
+    </div>
+  </section>
 
-<div style="color: #777;background-color:white;text-align:center;padding:30px 80px;text-align: justify;">
-  <p style="text-align:center;">Copyright © 2019 <br/> Janak Poojary</p>
-</div>
-<script>
-window.onscroll = function() {myFunction()};
+  <div style="color: #777;background-color:white;text-align:center;padding:30px 80px;text-align: justify;">
+    <p style="text-align:center;">Copyright © 2019 <br /> Janak Poojary</p>
+  </div>
+  <script>
+    window.onscroll = function() {
+      myFunction()
+    };
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
-<script>
-var overlay = document.getElementById("overlay");
-window.addEventListener('load',function()
-{
-  overlay.style.display = 'none';
-})
-</script>
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+  <script>
+    var overlay = document.getElementById("overlay");
+    window.addEventListener('load', function() {
+      overlay.style.display = 'none';
+    })
+  </script>
 </body>
+
 </html>
