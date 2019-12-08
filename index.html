@@ -63,42 +63,6 @@
     }
   </style>
 
-  <style>
-    #navbar {
-      z-index: 1;
-      overflow: auto;
-      background-color: white;
-    }
-
-    #navbar a {
-
-      float: right;
-      display: block;
-      color: #777;
-      text-align: center;
-      padding: 15px 25px;
-      text-decoration: none;
-      font-size: 18px;
-    }
-
-    #navbar a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-    .sticky {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      padding-top: 25px;
-      opacity: 0.6;
-    }
-
-    .sticky+.content {
-      padding-top: 60px;
-    }
-  </style>
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     .fa {
@@ -259,11 +223,19 @@
       }
       #rover{
         margin-right: 0 !important;
-        width:inherit !important;
-        height:inherit !important;
+        width:100% !important;
+        height:35rem !important;
       }
       #tweet{
         display:none;
+      }
+      .fa {
+        padding: 1rem;
+        font-size: 0.8rem;
+        width: 2.5rem;
+        text-align: center;
+        text-decoration: none;
+        margin: 0.5rem 0.2rem;
       }
       h2{
         font-size: 1rem;
@@ -280,13 +252,27 @@
 </head>
 
 <body>
-  <div id="navbar">
-    <a href="#connect">Connect</a>
-    <a href="contact.html">Contact</a>
-    <a href="#project">Project</a>
-    <a href="resume.html">Resume</a>
-    <a href="#home">Home</a>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#connect">Connect <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#project">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="resume.html">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+    </ul>
   </div>
+</nav>
   <section id="home">
     <div class="bgimg-1">
       <div id="particles-js">
@@ -408,7 +394,7 @@
   </div>
   <section id="connect">
     <div style="position:relative;">
-      <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+      <div id="conn" style="color:#ddd;background-color:#282E34;text-align:center;padding:2rem 4rem;text-align: justify;">
         <p> CONNECT</p>
         <a href="https://github.com/JanakPoojary" class="fa fa-github"></a>
         <a href="https://www.facebook.com/janak.poojari" class="fa fa-facebook"></a>
@@ -422,23 +408,7 @@
   <div style="color: #777;background-color:white;text-align:center;padding:30px 80px;text-align: justify;">
     <p style="text-align:center;">Copyright © 2019 <br /> Janak Poojary</p>
   </div>
-  <script>
-    window.onscroll = function() {
-      myFunction()
-    };
-
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-  </script>
-  <script>
+    <script>
     var overlay = document.getElementById("overlay");
     window.addEventListener('load', function() {
       overlay.style.display = 'none';
