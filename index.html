@@ -222,11 +222,6 @@
       color: #111;
     }
 
-    @media screen and (min-width: 0px) and (max-width: 400px) {
-      #order {
-        display: none;
-      }
-    }
 
     /* Turn off parallax scrolling for tablets and phones */
     @media only screen and (max-device-width: 1024px) {
@@ -262,24 +257,7 @@
         display:none;
       }
 
-      #linkeddesc {
-        display: none;
-      }
-
       #tweet {
-        height: auto;
-        width: auto;
-      }
-
-      #roverdesc {
-        display: none;
-      }
-
-      #rover {
-        display: none;
-      }
-
-      #linkedadesc {
         height: auto;
         width: auto;
       }
@@ -316,16 +294,18 @@
     <div class="container" style="background-color:white;">
       <div class="row">
         <div class="col">
-          <h2 style="font-family: 'Gugi', cursive;color:grey;">
-            _<span class="typer" id="some-id" data-words=" C O D E R , M A K E R , D E V E L O P E R, E N G I N E E R " data-colors="#ed426d,#6d67c6,#b74033,#20C1BD" data-delay="20">
+          <div class="row">
+          <h2 id="some-id" style="font-family: 'Gugi', cursive;color:grey;">
+            _<span class="typer"  data-words=" C O D E R , M A K E R , D E V E L O P E R, E N G I N E E R " data-colors="#ed426d,#6d67c6,#b74033,#20C1BD" data-delay="20">
             </span>
           </h2>
-          <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-          <p style="font-size:1rem;font-family:'Montserrat', sans-serif;"></br>HELLO THERE! I am a student from Sardar Vallabhbhai
-            Institute of Technology, Vasad, Gujarat, India. </br>I'm pursuing my Bachelors in Computer Engineering.</br>
-            I'm a tech enthusiast and a big fan of IOT.</br> I enjoy working with Arduino, NodeMCU, firebase and related stuff!
-            </br>I created this website as a fun project but as this project started forming up it sparked my interest in web.</p>
-        </div>
+          <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script></div>
+          <div class="row">
+          <p style="font-size:1rem;font-family:'Montserrat', sans-serif;">HELLO THERE! I am a student from Sardar Vallabhbhai
+            Institute of Technology, Vasad, Gujarat, India. I'm pursuing my Bachelors in Computer Engineering.
+            I'm a tech enthusiast and a big fan of IOT. I enjoy working with Arduino, NodeMCU, firebase and related stuff!
+            I created this website as a fun project but as this project started forming up it sparked my interest in web.</p>
+        </div></div>
         <div class="col">
           <img src="resource/jk1.jpg" id="jp" style="border-radius:50%;width:19rem; height:19rem;margin-left:15rem;"></img>
         </div>
