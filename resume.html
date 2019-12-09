@@ -10,7 +10,26 @@
       font-family: 'Montserrat', sans-serif;
 
     }
-
+    .ct-btn-scroll{
+      display:none;
+    }
+      @media only screen and (max-width: 1024px) {
+    .ct-btn-scroll {
+      display: block;
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      bottom: 7rem;
+      left: 0;
+      right: 0;
+      margin: auto;
+      padding-top: 500px;
+      z-index: 9;
+      border-radius: 50%;
+      -webkit-transition: background-color 0.25s ease-in-out;
+      transition: background-color 0.25s ease-in-out;
+    }
+}
     h2,
     h3,
     h4,
@@ -63,7 +82,9 @@
             <a href="https://drive.google.com/open?id=1CNc6jykpgdeRPcIWjGfaP2xpFWykZc11" target="_blank" style="text-decoration:none;">
               <h2 style="color:white; font-size:0.5em;">DOWNLOAD RESUME</h2>
             </a>
-          </div>
+            </div>
+            <a class="ct-btn-scroll ct-js-btn-scroll" href="#section2"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
+
     </center>
   </div>
   <div class="container">

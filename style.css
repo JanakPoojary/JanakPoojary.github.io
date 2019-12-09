@@ -2,6 +2,20 @@
   baackground-img: url('bg.jpg')
 }
 
+.ct-btn-scroll {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  bottom: 7rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 500px;
+  z-index: 9;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
 .eblock {
   background: #292c31;
   /* background:#cccccc; */

@@ -17,11 +17,13 @@
   <title> Janak Poojary | Bio </title>
   <link rel="shortcut icon" type="image/png" href="resource/icon1.png">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Kanit|Montserrat" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -203,10 +205,12 @@
       #webdevh {
         font-size: 1.5rem;
       }
-      #mainname{
+
+      #mainname {
         font-size: 0.8rem;
         letter-spacing: 5px;
       }
+
       #iotdesc {
         display: none;
       }
@@ -220,16 +224,19 @@
         width: 14rem !important;
         height: 14rem !important;
       }
-      #some-id{
-        display:none;
+
+      #some-id {
+        display: none;
       }
-      #rover{
+
+      #rover {
         margin-right: 0 !important;
-        width:100% !important;
-        height:35rem !important;
+        width: 100% !important;
+        height: 35rem !important;
       }
-      #tweet{
-        display:none;
+
+      #tweet {
+        display: none;
       }
 
       .fa {
@@ -240,58 +247,81 @@
         text-decoration: none;
         margin: 0.5rem 0.2rem;
       }
-      h2{
+
+      h2 {
         font-size: 1rem;
-        letter-spacing:4;
-      }
-      p{
-        font-family:"Segoe UI",Arial,sans-serif;
-        font-size: 0.8rem;
-      }
+        letter-spacing: 4;
       }
 
-.nav-link{
-  text-decoration: none;
-  color:black;
-}
+      p {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 0.8rem;
+      }
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: black;
+    }
+
+    .ct-btn-scroll {
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      bottom: 7rem;
+      left: 0;
+      right: 0;
+      margin: auto;
+      padding-top: 500px;
+      z-index: 9;
+      border-radius: 50%;
+      -webkit-transition: background-color 0.25s ease-in-out;
+      transition: background-color 0.25s ease-in-out;
+    }
+
+    img,
+    figure {
+      max-width: 100%;
+    }
   </style>
 </head>
 
 <body>
   <div class="pos-f-t">
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-light p-4">
-      <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#connect">Connect</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#project">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="resume.html">Resume</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-    </ul>
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-light p-4">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#connect">Connect</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
+    <nav class="navbar navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
   </div>
-  <nav class="navbar navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
-</div>
   <section id="home">
     <div class="bgimg-1">
       <div id="particles-js">
-        <div class="caption" >
+        <div class="caption">
           <span class="border" id="mainname"><a href="contact.html" title="contact" target="_blank" style="text-decoration:none; color:white;">JANAKARAJ POOJARY</a></span>
         </div>
+        <a class="ct-btn-scroll ct-js-btn-scroll" href="#section2"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
       </div>
       <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
       <script>
@@ -308,19 +338,24 @@
       <div class="row">
         <div class="col">
           <div class="row">
-          <h2 id="some-id" style="font-family: 'Gugi', cursive;color:grey;">
-            _<span class="typer"  data-words=" C O D E R , M A K E R , D E V E L O P E R, E N G I N E E R " data-colors="#ed426d,#6d67c6,#b74033,#20C1BD" data-delay="20">
-            </span>
-          </h2>
-          <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script></div>
-          <div class="row"><div class="col">
-          <p style="font-size:1rem;font-family:'Montserrat', sans-serif;">Hello there! I am a student from Sardar Vallabhbhai
-            Institute of Technology, Vasad, Gujarat, India. I'm pursuing my Bachelors in Computer Engineering.
-            I'm a tech enthusiast and a big fan of IOT. I enjoy working with Arduino, NodeMCU, firebase and related stuff!
-            I created this website as a fun project but as this project started forming up it sparked my interest in web.</p>
-        </div></div></div>
+            <h2 id="some-id" style="font-family: 'Gugi', cursive;color:grey;">
+              _<span class="typer" data-words=" C O D E R , M A K E R , D E V E L O P E R, E N G I N E E R " data-colors="#ed426d,#6d67c6,#b74033,#20C1BD" data-delay="20">
+              </span>
+            </h2>
+            <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p style="font-size:1rem;font-family:'Montserrat', sans-serif;">Hello there! I am a student from Sardar Vallabhbhai
+                Institute of Technology, Vasad, Gujarat, India. I'm pursuing my Bachelors in Computer Engineering.
+                I'm a tech enthusiast and a big fan of IOT. I enjoy working with Arduino, NodeMCU, firebase and related stuff!
+                I created this website as a fun project but as this project started forming up it sparked my interest in web.</p>
+            </div>
+          </div>
+        </div>
         <div class="col">
-          <img src="resource/jk1.jpg" id="jp" style="border-radius:50%;width:19rem; height:19rem;margin-left:15rem;"></img>
+          <img data-aos="fade-rigth" data-aos-offset="400"
+     data-aos-easing="ease-in-sine" src="resource/jk1.jpg" id="jp" style="border-radius:50%;width:19rem; height:19rem;margin-left:15rem;"></img>
         </div>
       </div>
     </div>
@@ -399,8 +434,8 @@
           </div>
         </div>
       </div>
-      <div class="col" id="tweet" >
-        <a class="twitter-timeline"   data-width="250" data-height="500" href="https://twitter.com/janak_poojari?ref_src=twsrc%5Etfw">Tweets by janak_poojari</a>
+      <div class="col" id="tweet">
+        <a class="twitter-timeline" data-width="250" data-height="500" href="https://twitter.com/janak_poojari?ref_src=twsrc%5Etfw">Tweets by janak_poojari</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
@@ -421,14 +456,18 @@
   <div style="color: #777;background-color:white;text-align:center;padding:30px 80px;text-align: justify;">
     <p style="text-align:center;">Copyright © 2019 <br /> Janak Poojary</p>
   </div>
+  <script>
+  AOS.init();
+</script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script>
     var overlay = document.getElementById("overlay");
     window.addEventListener('load', function() {
       overlay.style.display = 'none';
     })
   </script>
-  </body>
+</body>
+
 </html>
