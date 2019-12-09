@@ -218,13 +218,15 @@
       #webdevdesc {
         display: none;
       }
-
-      #jp {
-        margin-left: 3rem !important;
-        width: 14rem !important;
-        height: 14rem !important;
+      #jpparent{
+        display:none;
       }
-
+      #aboutparent{
+        margin:0rem;
+      }
+      #jp {
+        display:none !important;
+      }
       #some-id {
         display: none;
       }
@@ -344,18 +346,17 @@
             </h2>
             <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
           </div>
-          <div class="row">
+          <div class="row" "aboutparent">
             <div class="col">
-              <p style="font-size:1rem;font-family:'Montserrat', sans-serif;">Hello there! I am a student from Sardar Vallabhbhai
+              <p id="aboutme" style="font-size:1rem;font-family:'Montserrat', sans-serif;">Hello there! I am a student from Sardar Vallabhbhai
                 Institute of Technology, Vasad, Gujarat, India. I'm pursuing my Bachelors in Computer Engineering.
                 I'm a tech enthusiast and a big fan of IOT. I enjoy working with Arduino, NodeMCU, firebase and related stuff!
                 I created this website as a fun project but as this project started forming up it sparked my interest in web.</p>
             </div>
           </div>
         </div>
-        <div class="col">
-          <img data-aos="fade-rigth" data-aos-offset="400"
-     data-aos-easing="ease-in-sine" src="resource/jk1.jpg" id="jp" style="border-radius:50%;width:19rem; height:19rem;margin-left:15rem;"></img>
+        <div class="col" id="jpparent">
+          <img data-aos="fade-rigth" data-aos-offset="400" data-aos-easing="ease-in-sine" src="resource/jk1.jpg" id="jp" style="border-radius:50%;width:19rem; height:19rem;margin-left:15rem;"></img>
         </div>
       </div>
     </div>
@@ -457,8 +458,8 @@
     <p style="text-align:center;">Copyright © 2019 <br /> Janak Poojary</p>
   </div>
   <script>
-  AOS.init();
-</script>
+    AOS.init();
+  </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
